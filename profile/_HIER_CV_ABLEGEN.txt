@@ -1,0 +1,3 @@
+Lege hier deinen Lebenslauf als cv.pdf (oder cv.md) ab, außerdem Persönlichkeitsanalysen,
+Projektbeschreibungen o. ä. als .md/.txt/.pdf. Dateien mit "_" am Anfang werden ignoriert.
+Danach: `jobscout interview -d .` für das LLM-Interview.

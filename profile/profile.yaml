@@ -1,0 +1,35 @@
+# ENTWURF – aus bisherigen Gesprächen zusammengestellt. Bitte prüfen und ergänzen
+# (Abschlussjahre, Noten, konkrete Ergebnisse, Zeiträume).
+
+name: German Bechthold
+headline: Verfahrensingenieur mit Fokus auf Machine Learning und Prozessdesign
+location: Deutschland
+education:
+  - degree: M.Sc. Energy & Process Engineering
+    institution: Ruhr-Universität Bochum
+    thesis: Machine Learning für Pervaporationsmembranen
+  - degree: B.Sc. Environmental Engineering
+    institution: Ruhr-Universität Bochum
+  - degree: IT Engineering (eingeschrieben seit WS 2026/27)
+    institution: Ruhr-Universität Bochum
+research:
+  - Machine Learning für Pervaporationsmembranen (Masterarbeit)
+  - Lignin-Depolymerisation
+experience:
+  - role: Verfahrensingenieur
+    organization: Bayer
+    period: 2026 (ca. 5 Monate, Vollzeit)
+  - role: Power-to-X Inbetriebnahme
+    organization: Ineratec GmbH
+  - role: CO2-Reduktion (Prozesstechnik)
+    organization: MTU Maintenance
+  - role: Gründer, 3D-Druck-Business (Schichtkraft3D)
+    highlights: [Entwicklung und Vertrieb spezialisierter Kunststoffteile über Amazon und eBay]
+  - role: Freiberuflicher MINT-Tutor
+skills:
+  technical: [Python, Machine Learning, Data Science, Prozesssimulation, Verfahrenstechnik]
+  domains: [Membran- und Trennverfahren, Power-to-X, CO2-Reduktion, Prozessdesign]
+languages: [Deutsch (Muttersprache), Russisch (Muttersprache), Englisch (verhandlungssicher), Japanisch (Grundkenntnisse)]
+constraints:
+  start: so bald wie möglich
+  regions: [Deutschland, Niederlande, Schweiz, Skandinavien, übriges Europa außer UK/Irland]
