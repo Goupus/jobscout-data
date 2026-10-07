@@ -3,6 +3,8 @@
 # Lehrstuhlseiten → type: llm_page.
 
 defaults:
+  # jede Stellenanzeige öffnen und vollständig lesen (Seitenzahlen folgt jobscout selbst)
+  fetch_details: true
   # gilt für jede Quelle ohne eigenen focus – in der App unter 'Sources' editierbar
   focus: >-
     PhD / doctoral positions (also research assistant roles) in chemical or process engineering
@@ -17,10 +19,6 @@ sources:
   - name: AcademicPositions – neueste PhD-Stellen (Europa)
     type: llm_page
     url: https://academicpositions.com/jobs/position/phd
-    extra_urls:
-      - https://academicpositions.com/jobs/position/phd?page=2
-      - https://academicpositions.com/jobs/position/phd?page=3
-      - https://academicpositions.com/jobs/position/phd?page=4
 
   - name: AcademicTransfer (NL) – process engineering
     type: llm_page
@@ -45,16 +43,12 @@ sources:
   - name: EURAXESS – R1 (PhD)
     type: llm_page
     url: https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=job_research_profile%3A447
-    extra_urls:
-      - https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=job_research_profile%3A447&page=1
-      - https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=job_research_profile%3A447&page=2
 
   # ---------- Lehrstühle ----------
   - name: TU Delft – Process Intelligence Research (Schweidtmann)
     type: llm_page
     url: https://www.pi-research.org/open_positions/
     organization: TU Delft – Process Intelligence Research (Artur Schweidtmann)
-    fetch_details: true
 
   # Vorlage für weitere Lehrstühle:
   # - name: <Uni> – <Lehrstuhl>
