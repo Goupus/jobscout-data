@@ -10,9 +10,14 @@ Private Daten für [jobscout](https://github.com/Goupus/Jobscout): Profil, Quell
 Der Scan läuft Mo + Do per GitHub Action (`.github/workflows/scan.yml`).
 Benötigtes Secret: `ANTHROPIC_API_KEY`.
 
-Lokal ansehen:
+## Die App
+
 ```bash
-git pull
-pip install "jobscout[dashboard] @ git+https://github.com/Goupus/Jobscout.git"
-jobscout dashboard -d .
+git clone https://github.com/Goupus/jobscout-data && cd jobscout-data
+pip install "jobscout[app] @ git+https://github.com/Goupus/Jobscout.git"
+jobscout app -d .
 ```
+
+Dort: Unterlagen hochladen, Interview führen, Quellen bearbeiten und testen, Matches ansehen.
+Änderungen mit **Save to GitHub** (Seitenleiste) hochladen, neue Ergebnisse mit **Get latest results** holen.
+Status und Notizen zu Stellen liegen in `tracker.yaml`.

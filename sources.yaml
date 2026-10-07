@@ -1,13 +1,16 @@
 # Germans Quellen. Geprüft am 2026-10-07.
-# Neue Quelle hinzufügen: Eintrag kopieren, url anpassen. Lehrstuhlseiten → type: llm_page.
+# Am einfachsten in der App bearbeiten: jobscout app -d .  → Seite 'Sources'.
+# Lehrstuhlseiten → type: llm_page.
 
-x-focus: &focus >-
-  PhD / doctoral positions (also research assistant roles) in chemical or process engineering
-  that combine engineering with machine learning, data science or optimisation: ML/AI for process
-  design and flowsheet synthesis, hybrid (physics + ML) models, heat/process integration, membrane
-  and separation processes, process intensification, process systems engineering, Power-to-X /
-  defossilisation modelling, techno-economic and life-cycle assessment, technology & society
-  research on the chemical industry. Exclude postdoc, professor and pure lab-synthesis roles.
+defaults:
+  # gilt für jede Quelle ohne eigenen focus – in der App unter 'Sources' editierbar
+  focus: >-
+    PhD / doctoral positions (also research assistant roles) in chemical or process engineering
+    that combine engineering with machine learning, data science or optimisation: ML/AI for process
+    design and flowsheet synthesis, hybrid (physics + ML) models, heat/process integration, membrane
+    and separation processes, process intensification, process systems engineering, Power-to-X /
+    defossilisation modelling, techno-economic and life-cycle assessment, technology & society
+    research on the chemical industry. Exclude postdoc, professor and pure lab-synthesis roles.
 
 sources:
   # ---------- Stellenbörsen / Aggregatoren ----------
@@ -18,28 +21,23 @@ sources:
       - https://academicpositions.com/jobs/position/phd?page=2
       - https://academicpositions.com/jobs/position/phd?page=3
       - https://academicpositions.com/jobs/position/phd?page=4
-    focus: *focus
 
   - name: AcademicTransfer (NL) – process engineering
     type: llm_page
     url: https://www.academictransfer.com/en/jobs/?q=process+engineering
-    focus: *focus
 
   - name: AcademicTransfer (NL) – machine learning chemical
     type: llm_page
     url: https://www.academictransfer.com/en/jobs/?q=machine+learning+chemical
-    focus: *focus
 
   - name: AcademicTransfer (NL) – membrane
     type: llm_page
     url: https://www.academictransfer.com/en/jobs/?q=membrane
-    focus: *focus
 
   - name: ETH Zürich – Jobportal
     type: llm_page
     url: https://jobs.ethz.ch/
     organization: ETH Zürich
-    focus: *focus
 
   # EURAXESS (inkl. MSCA Doctoral Networks). Die Filter-URL bitte im Browser erzeugen
   # (Research Field: Engineering · Researcher Profile: First Stage Researcher (R1) ·
@@ -50,7 +48,6 @@ sources:
     extra_urls:
       - https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=job_research_profile%3A447&page=1
       - https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=job_research_profile%3A447&page=2
-    focus: *focus
 
   # ---------- Lehrstühle ----------
   - name: TU Delft – Process Intelligence Research (Schweidtmann)
