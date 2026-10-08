@@ -16,9 +16,11 @@ defaults:
 
 sources:
   # ---------- Stellenbörsen / Aggregatoren ----------
+  # blockiert automatische Abrufe (403 Forbidden beim Scan am 07.10.) – pausiert
   - name: AcademicPositions – neueste PhD-Stellen (Europa)
     type: llm_page
     url: https://academicpositions.com/jobs/position/phd
+    enabled: false
 
   - name: AcademicTransfer (NL) – process engineering
     type: llm_page
